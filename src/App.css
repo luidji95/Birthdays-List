@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+  background-color: rgba(238, 137, 171, 0.521);
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.friend-picture{
+  max-width: 100px;
+
+}
+.friend-list{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  width: 500px;
+}
+.picture{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  border: 2px solid #ddd;
+}
+.friend-picture {
+  width: 100%;   
+  height: 100%; 
+  object-fit: cover;
+}
+.Clear{
+  background-color: rgb(49, 194, 49);
+  color:white;
+}
+.Clear:hover{
+  background-color: green;
+}
+.clear-button-div{
+  margin-left: 40%;
+  margin-top: 10px;
+}
+.hidden{
+  display: none;
+}
+.delete-item{
+  background-color: rgba(212, 25, 25, 0.879);
+  color:white;
+
+}
+.delete-item:hover{
+  background-color: red;
+}

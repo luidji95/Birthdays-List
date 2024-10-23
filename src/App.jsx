@@ -47,6 +47,10 @@ function App() {
     setFriends([]);
   };
 
+  const RefreshFunction = () => {
+    setFriends(Data);
+  }
+  console.log('Pokrecem se ');
   const DeleteFunction = (ev) => {
     const selectedId = Number(ev.target.id); 
     const filteredFriends = friends.filter(friend => friend.id !== selectedId);
@@ -73,9 +77,10 @@ function App() {
         </div>
       ))}
       <div className='clear-button-div'>
-        <button className='Clear' onClick={ClearFunction}>
-          Clear All
+        <button className='Clear' onClick={friends.length > 0 ? ClearFunction : RefreshFunction}>
+          {friends.length > 0 ? 'Clear All' : 'Refresh All'}
         </button>
+
       </div>
     </div>
   );
